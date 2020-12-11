@@ -1,17 +1,22 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, View, Image } from "react-native";
+import { StyleSheet, View, ImageBackground, _View, Text } from "react-native";
 import colors from "../config/colors";
 
 const WelcomeScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.background}>
-        <Image
+        <ImageBackground
           source={require("../assets/background.jpg")}
           style={styles.image}
-        />
-        <Image source={require("../assets/logo-red.png")} style={styles.logo} />
+        >
+          <ImageBackground
+            source={require("../assets/logo-red.png")}
+            style={styles.logo}
+          ></ImageBackground>
+          <Text style={styles.text}>Sell what you don't need!</Text>
+        </ImageBackground>
       </View>
       <View style={styles.placeholder1} />
       <View style={styles.placeholder2} />
@@ -27,27 +32,33 @@ const styles = StyleSheet.create({
   },
   background: {
     flex: 8,
+    justifyContent: "center",
   },
 
   image: {
     width: "100%",
     height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
   },
   logo: {
-    width: 200,
-    height: 200,
-    justifyContent: "center",
+    width: 100,
+    height: 100,
+    bottom: 160,
   },
   placeholder1: {
     flex: 1,
     width: "100%",
-    height: 50,
+    height: 40,
     backgroundColor: colors.primary,
   },
   placeholder2: {
     flex: 1,
     width: "100%",
-    height: 50,
+    height: 40,
     backgroundColor: colors.secondary,
+  },
+  text: {
+    bottom: 160,
   },
 });
