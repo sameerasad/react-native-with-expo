@@ -59,6 +59,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.secondary,
   },
   text: {
-    bottom: 160,
+    bottom: 163,
   },
 });
