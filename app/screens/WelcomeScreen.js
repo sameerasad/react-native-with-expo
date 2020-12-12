@@ -18,8 +18,12 @@ const WelcomeScreen = () => {
           <Text style={styles.text}>Sell what you don't need!</Text>
         </ImageBackground>
       </View>
-      <View style={styles.placeholder1} />
-      <View style={styles.placeholder2} />
+      <View style={styles.placeholder1}>
+        <Text style={styles.loginText}>Login</Text>
+      </View>
+      <View style={styles.placeholder2}>
+        <Text style={styles.loginText}>Register</Text>
+      </View>
     </View>
   );
 };
@@ -31,7 +35,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   background: {
-    flex: 8,
+    flex: 10,
     justifyContent: "center",
   },
 
@@ -40,6 +44,7 @@ const styles = StyleSheet.create({
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
+    opacity: 0.6,
   },
   logo: {
     width: 100,
@@ -49,16 +54,26 @@ const styles = StyleSheet.create({
   placeholder1: {
     flex: 1,
     width: "100%",
-    height: 40,
+    height: 30,
     backgroundColor: colors.primary,
+    borderRadius: 35,
+    top: 5,
+    opacity: 0.6,
   },
   placeholder2: {
-    flex: 1,
     width: "100%",
-    height: 40,
+    flex: 1,
+    height: 30,
     backgroundColor: colors.secondary,
+    borderRadius: 35,
+    marginTop: 10,
+    opacity: 0.6,
   },
   text: {
     bottom: 163,
+  },
+  loginText: {
+    top: 20,
+    left: "45%",
   },
 });
