@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     top: "40%",
     borderRadius: 35,
     borderWidth: 10,
-    elevation: 50,
+    elevation: 60,
 
     flexDirection: "column",
   },
