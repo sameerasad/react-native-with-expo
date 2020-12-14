@@ -1,6 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, View, ImageBackground, _View, Text } from "react-native";
+import {
+  StyleSheet,
+  View,
+  ImageBackground,
+  _View,
+  Text,
+  TouchableOpacity,
+} from "react-native";
 import colors from "../config/colors";
 
 const WelcomeScreen = () => {
@@ -18,12 +25,12 @@ const WelcomeScreen = () => {
           <Text style={styles.text}>Sell what you don't need!</Text>
         </ImageBackground>
       </View>
-      <View style={styles.placeholder1}>
+      <TouchableOpacity style={styles.placeholder1}>
         <Text style={styles.loginText}>Login</Text>
-      </View>
-      <View style={styles.placeholder2}>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.placeholder2}>
         <Text style={styles.loginText}>Register</Text>
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };

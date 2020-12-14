@@ -8,7 +8,7 @@ import colors from "./app/config/colors.js";
 import { TestText } from "./app/TestText.js";
 
 export default function App() {
-  return <TestText />;
+  return <WelcomeScreen />;
 }
 const styles = StyleSheet.create({
   container: {
