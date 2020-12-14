@@ -5,13 +5,10 @@ import { StyleSheet, View, Image, Text } from "react-native";
 import ViewImageScreen from "./app/screens/ViewImageScreen.js";
 import WelcomeScreen from "./app/screens/WelcomeScreen.js";
 import colors from "./app/config/colors.js";
+import { TestText } from "./app/TestText.js";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>HELLOworld</Text>
-    </View>
-  );
+  return <TestText />;
 }
 const styles = StyleSheet.create({
   container: {
