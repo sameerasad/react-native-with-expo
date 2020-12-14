@@ -22,5 +22,6 @@ const styles = StyleSheet.create({
     color: colors.primary,
     lineHeight: 40, //DISTANCE BETWEEN LINES
     textAlign: "center",
+    fontSize: 40,
   },
 });
